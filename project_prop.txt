@@ -1,0 +1,78 @@
+Question: How do riders with membership compare with riders without?
+
+Impact: How to improve membership numbers.
+
+1. Compare number of rides between mem and non-member
+2. Compare mean/median length of time and distance_data
+3. See what stations are the most popular for mem and non-membership
+4. See how time day affects # of rides/time/distance_data
+5. See how time of day affects population locations
+
+
+Compare mem/non-member and commuting Trips
+Origins and destinations
+membership types of commuting trips and non-commuting
+
+
+mixture models classifications
+
+Project
+1. Figure out how to classify commuter vs member_casual
+  a. Gaussian Mixture Model
+  b. Binning rides based off of time -very easy
+2. Land use data
+  a. Figure out how to map lat/long to the dataset
+  b. How draw polygons around common land use areas in ARCGIS and then export as geoJSON
+3.
+
+**Story**
+How does rider membership impact the use of the bike share system for commuting and non-commuting?
+
+
+How does ridership change based on membership?
+- Layered histogram with Time on X axis and swap-able y axis
+  - Y could be: # of rides,
+- Swap time between hourly of 1 day and daily view of 1 year
+
+How do commuting patterns change based on membership?
+
+
+Does membership change the area that users start their rides?
+
+
+# What to do
+Eric - GMM, or Binning
+Ling/Panick - See if you can draw polygons in arcGIS and then export as geoJSON
+All - Come up with visualizations for the last 2 questions (or come up with new questions)
+https://www.cs171.org/2020/fame/
+
+Project
+1. Figure out how to classify commuter vs member_casual
+  a. Gaussian Mixture Model
+  b. Binning rides based off of time -very easy
+2. Land use data
+  a. Figure out how to map lat/long to the dataset
+  b. How draw polygons around common land use areas in ARCGIS and then export as geoJSON
+3.
+
+**Story**
+How does rider membership impact the use of the bike share system for commuting and non-commuting?
+
+How does ridership change based on membership?
+  - layered histogram with distance of ride grouped by membership
+    - data headers (group(hour), Member, Non-Member)
+  - layered histogram with total time of ride grouped by membership
+    - data headers (group(hour), Member, Non-Member)
+
+How do commuting patterns change based on membership?
+- 2 heat maps side by side that are split between membership (start location)
+- 2 heat maps side by side that are split between membership (END location)
+  - button swaps between morning and evening commute
+
+
+- do the  histogram again, but just for commuting times
+  - Have member and nonmember side by side in the histogram
+
+Does membership change the area that users start their rides?
+- chord graph between land use clusters
+- pair with histogram of lines
